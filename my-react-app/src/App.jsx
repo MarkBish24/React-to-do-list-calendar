@@ -8,7 +8,7 @@ function App() {
     <>
       <Banner />
       <DayBanner />
-      <div className="Calendar"></div>
+      <div className="calendar"></div>
     </>
   );
 }
