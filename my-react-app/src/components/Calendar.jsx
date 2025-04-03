@@ -3,7 +3,7 @@ import DayBox from "./DayBox.jsx";
 
 export default function Calendar() {
   return (
-    <div className="calendar">
+    <div className="calendar-row">
       <DayBox />
       <DayBox />
       <DayBox />
