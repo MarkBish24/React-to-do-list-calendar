@@ -34,8 +34,12 @@
   border-radius: 6px;
 
   background-color: rgb(241, 241, 241);
-  transition: background-color 0.3s ease-in-out;
+  color: rgb(69, 69, 69);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  cursor: pointer;
 }
 .note-button:hover {
   background-color: rgb(198, 198, 198);
+  color: rgb(239, 239, 239);
 }
