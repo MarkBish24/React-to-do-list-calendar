@@ -1,11 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
 .day-box {
-  flex: 1; /* Each item takes up an equal amount of space */
-  background-color: lightgray; /* Just for visibility */
+  position: relative;
+  flex: 1;
+  background-color: lightgray;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 2px;
+  padding: 10px;
+}
+.day-text,
+.note-button {
+  font-family: "Winky Sans";
+  font-weight: 200;
+  top: 6px;
+  position: absolute;
+}
+
+.day-text {
+  left: 50%;
+  transform: translate(-50%);
+}
+.note-button {
+  left: 95%;
+  height: 24px;
+  width: 24px;
+  transform: translateX(-95%);
+  text-align: center;
+
+  border: None;
+  border-radius: 6px;
+
+  background-color: rgb(241, 241, 241);
+  transition: background-color 0.3s ease-in-out;
+}
+.note-button:hover {
+  background-color: rgb(198, 198, 198);
 }
