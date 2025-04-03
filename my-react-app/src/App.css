@@ -2,3 +2,10 @@ body {
   padding-left: 200px;
   padding-right: 200px;
 }
+
+.calendar {
+  height: 165px;
+
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+
+.day-box {
+  flex: 1; /* Each item takes up an equal amount of space */
+  background-color: lightgray; /* Just for visibility */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+}

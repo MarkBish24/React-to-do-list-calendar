@@ -16,6 +16,21 @@ h1 {
 
 .left-arrow,
 .right-arrow {
+  font-family: "Winky Sans", sans-serif;
+  font-weight: 600;
   font-size: 50px;
   cursor: pointer;
+
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0px 40px;
+  transition: font-size 0.2s ease-in-out;
+}
+.left-arrow:hover,
+.right-arrow:hover {
+  font-size: 65px;
 }
