@@ -1,6 +1,7 @@
-.to-do-note {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
+.to-do-note {
+  font-family: "Winky Sans", sans-serif;
   width: 100%;
   padding: 5px 0px;
   margin-bottom: 5px;
