@@ -1,0 +1,9 @@
+.to-do-note {
+  background-color: red;
+
+  width: 100%;
+  padding: 5px 0px;
+  margin-bottom: 5px;
+
+  border-radius: 3px;
+}

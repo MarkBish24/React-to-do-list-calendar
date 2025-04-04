@@ -43,3 +43,8 @@
   background-color: rgb(198, 198, 198);
   color: rgb(239, 239, 239);
 }
+.note-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

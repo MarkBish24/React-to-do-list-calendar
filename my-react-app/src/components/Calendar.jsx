@@ -20,7 +20,13 @@ function updateMonth(date) {
     if (i < 1) {
       week.push(<div className="empty-box" key={`empty-${i}`}></div>);
     } else if (i <= daysInMonth.length) {
-      week.push(<DayBox key={i} day={i} />);
+      week.push(
+        <DayBox
+          key={new Date(year, month, i).getTime()}
+          day={i}
+          date={new Date(year, month, i).toISOString().split("T")[0]}
+        />
+      );
     }
 
     if (week.length === 7) {
