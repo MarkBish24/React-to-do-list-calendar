@@ -10,6 +10,7 @@
 
 .empty-box {
   flex: 1;
+  background-color: rgb(226, 226, 226);
 
   margin: 2px;
   padding: 10px;
