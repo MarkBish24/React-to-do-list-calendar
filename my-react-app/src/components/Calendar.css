@@ -10,4 +10,7 @@
 
 .empty-box {
   flex: 1;
+
+  margin: 2px;
+  padding: 10px;
 }
