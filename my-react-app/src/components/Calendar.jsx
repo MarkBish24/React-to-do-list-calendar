@@ -14,7 +14,7 @@ function updateMonth(date) {
 
   let weeks = [];
   let week = [];
-  let i = -firstDay;
+  let i = firstDay === 6 ? 1 : -firstDay;
   while (i <= daysInMonth.length) {
     if (i <= 0) {
       week.push(<div className="empty-box" key={`empty-${i}`}></div>);
