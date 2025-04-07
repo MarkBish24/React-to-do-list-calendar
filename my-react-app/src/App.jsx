@@ -24,11 +24,27 @@ function App() {
     });
   }
 
+  function changeDayUp() {
+    setDate((prevDate) => {
+      let newDate = new Date(prevDate);
+      newDate.setDay(newDate.getDay() + 1);
+      return newDate;
+    });
+  }
+  function changeDayDown() {
+    setDate((prevDate) => {
+      let newDate = new Date(prevDate);
+      newDate.setDay(newDate.getDay() - 1);
+      return newDate;
+    });
+  }
+
   function showPopUp() {
     console.log("Pop Up");
     setIsActive(true);
   }
   function hidePopUp() {
+    console.log("Pop Down");
     setIsActive(false);
   }
 
@@ -41,7 +57,13 @@ function App() {
       />
       <DayBanner />
       <Calendar date={date} showPopUp={showPopUp} hidePopUp={hidePopUp} />
-      {isActive ? <PopUpWindow /> : null}
+      {isActive ? (
+        <PopUpWindow
+          date={date}
+          changeDayDown={changeDayDown}
+          changeDayUp={changeDayUp}
+        />
+      ) : null}
     </>
   );
 }
