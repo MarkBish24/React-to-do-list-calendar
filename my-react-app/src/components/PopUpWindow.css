@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
+h2 {
+  font-family: "Winky Sans";
+  font-size: 15px;
+}
+
 .pop-up-window {
   border: 5px solid rgb(50, 50, 50);
   border-radius: 5px;
   background-color: white;
 
   width: 600px;
-  height: 300px;
+  height: 370px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -17,22 +22,27 @@
   font-size: 20px !important;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
 .input-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .input-title {
   border: None;
   background-color: whitesmoke;
-  width: 150px;
+  width: 350px;
   height: 25px;
   padding: 5px;
   margin: 5px;
   margin-top: 10px;
 }
-
 .input-description {
   border: None;
   background-color: whitesmoke;
@@ -40,4 +50,28 @@
   height: 120px;
   padding: 5px;
   margin: 5px;
+}
+
+.time-container {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.times-drop-down-menu {
+  display: flex;
+  align-items: center;
+}
+
+.times-drop-down-menu option {
+  text-align: center;
+  width: 80px;
+}
+
+.add-button {
+  margin-top: 10px;
+  padding: 10px 0px;
+  border: None;
+  width: 102px;
 }

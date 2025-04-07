@@ -63,6 +63,7 @@ function App() {
         <DayBanner />
         <Calendar date={date} showPopUp={showPopUp} hidePopUp={hidePopUp} />
       </div>
+      {isActive ? <div className="blur-window"></div> : null}
       {isActive ? (
         <PopUpWindow
           dateString={date.toLocaleDateString("en-US", {
