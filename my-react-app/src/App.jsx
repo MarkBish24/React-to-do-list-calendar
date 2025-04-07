@@ -51,16 +51,18 @@ function App() {
 
   return (
     <>
-      <Banner
-        dateString={date.toLocaleDateString("en-US", {
-          month: "long",
-          year: "numeric",
-        })}
-        prev={changeMonthDown}
-        next={changeMonthUp}
-      />
-      <DayBanner />
-      <Calendar date={date} showPopUp={showPopUp} hidePopUp={hidePopUp} />
+      <div className="main-page-container">
+        <Banner
+          dateString={date.toLocaleDateString("en-US", {
+            month: "long",
+            year: "numeric",
+          })}
+          prev={changeMonthDown}
+          next={changeMonthUp}
+        />
+        <DayBanner />
+        <Calendar date={date} showPopUp={showPopUp} hidePopUp={hidePopUp} />
+      </div>
       {isActive ? (
         <PopUpWindow
           dateString={date.toLocaleDateString("en-US", {
