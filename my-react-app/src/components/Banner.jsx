@@ -1,18 +1,13 @@
 import "./Banner.css";
 
-export default function Banner({ date, nextMonth, prevMonth }) {
+export default function Banner({ dateString, next, prev }) {
   return (
     <div className="banner">
-      <span className="left-arrow" onClick={prevMonth}>
+      <span className="left-arrow" onClick={prev}>
         &lt;
       </span>
-      <h1>
-        {date.toLocaleDateString("en-US", {
-          month: "long",
-          year: "numeric",
-        })}
-      </h1>
-      <span className="right-arrow" onClick={nextMonth}>
+      <h1>{dateString}</h1>
+      <span className="right-arrow" onClick={next}>
         &gt;
       </span>
     </div>

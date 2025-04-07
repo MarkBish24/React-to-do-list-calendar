@@ -27,14 +27,15 @@ function App() {
   function changeDayUp() {
     setDate((prevDate) => {
       let newDate = new Date(prevDate);
-      newDate.setDay(newDate.getDay() + 1);
+      newDate.setDate(newDate.getDate() + 1);
       return newDate;
     });
   }
+
   function changeDayDown() {
     setDate((prevDate) => {
       let newDate = new Date(prevDate);
-      newDate.setDay(newDate.getDay() - 1);
+      newDate.setDate(newDate.getDate() - 1);
       return newDate;
     });
   }
@@ -51,15 +52,23 @@ function App() {
   return (
     <>
       <Banner
-        date={date}
-        nextMonth={changeMonthUp}
-        prevMonth={changeMonthDown}
+        dateString={date.toLocaleDateString("en-US", {
+          month: "long",
+          year: "numeric",
+        })}
+        prev={changeMonthDown}
+        next={changeMonthUp}
       />
       <DayBanner />
       <Calendar date={date} showPopUp={showPopUp} hidePopUp={hidePopUp} />
       {isActive ? (
         <PopUpWindow
-          date={date}
+          dateString={date.toLocaleDateString("en-US", {
+            weekday: "long",
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+          })}
           changeDayDown={changeDayDown}
           changeDayUp={changeDayUp}
         />

@@ -1,13 +1,17 @@
 import "./PopUpWindow.css";
 import Banner from "./Banner.jsx";
 
-export default function PopUpWindow({ date, changeDayDown, changeDayUp }) {
+export default function PopUpWindow({
+  dateString,
+  changeDayDown,
+  changeDayUp,
+}) {
   return (
     <div className="pop-up-window">
       <Banner
-        date={date}
-        changeDayDown={changeDayDown}
-        changeDayUp={changeDayUp}
+        dateString={dateString}
+        prev={changeDayDown}
+        next={changeDayUp}
       ></Banner>
     </div>
   );
